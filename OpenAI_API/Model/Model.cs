@@ -142,16 +142,21 @@ namespace OpenAI_API.Models
 		/// Snapshot of gpt-3.5-turbo from March 1st 2023. Unlike gpt-3.5-turbo, this model will not receive updates, and will only be supported for a three month period ending on June 1st 2023.
 		/// </summary>
 		public static Model ChatGPTTurbo0301 => new Model("gpt-3.5-turbo-0301") { OwnedBy = "openai" };
+        public static Model ChatGPTTurbo1106 => new Model("gpt-3.5-turbo-1106") { OwnedBy = "openai" };
 
-		/// <summary>
-		/// More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Will be updated with the latest model iteration.  Currently in limited beta so your OpenAI account needs to be whitelisted to use this.
-		/// </summary>
-		public static Model GPT4 => new Model("gpt-4") { OwnedBy = "openai" };
+        /// <summary>
+        /// More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Will be updated with the latest model iteration.  Currently in limited beta so your OpenAI account needs to be whitelisted to use this.
+        /// </summary>
+        public static Model GPT4 => new Model("gpt-4") { OwnedBy = "openai" };
+        /// <summary>
+        /// our most advanced model. It offers a 128K context window and knowledge of world events up to April 2023. 
+        /// </summary>
+        public static Model GPT4_Turbo_Preview => new Model("gpt-4-1106-preview") { OwnedBy = "openai" };
 
-		/// <summary>
-		/// Same capabilities as the base gpt-4 mode but with 4x the context length. Will be updated with the latest model iteration.  Currently in limited beta so your OpenAI account needs to be whitelisted to use this.
-		/// </summary>
-		public static Model GPT4_32k_Context => new Model("gpt-4-32k") { OwnedBy = "openai" };
+        /// <summary>
+        /// Same capabilities as the base gpt-4 mode but with 4x the context length. Will be updated with the latest model iteration.  Currently in limited beta so your OpenAI account needs to be whitelisted to use this.
+        /// </summary>
+        public static Model GPT4_32k_Context => new Model("gpt-4-32k") { OwnedBy = "openai" };
 
 		/// <summary>
 		/// Stable text moderation model that may provide lower accuracy compared to TextModerationLatest.
