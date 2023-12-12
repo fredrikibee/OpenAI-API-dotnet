@@ -143,6 +143,7 @@ namespace OpenAI_API.Models
 		/// </summary>
 		public static Model ChatGPTTurbo0301 => new Model("gpt-3.5-turbo-0301") { OwnedBy = "openai" };
         public static Model ChatGPTTurbo1106 => new Model("gpt-3.5-turbo-1106") { OwnedBy = "openai" };
+		public static Model ChatGPTTurbo030116K => new Model("gpt-3.5-turbo-16k") { OwnedBy = "openai" };
 
         /// <summary>
         /// More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Will be updated with the latest model iteration.  Currently in limited beta so your OpenAI account needs to be whitelisted to use this.
