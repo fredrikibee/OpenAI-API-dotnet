@@ -144,6 +144,7 @@ namespace OpenAI_API.Models
 		public static Model ChatGPTTurbo0301 => new Model("gpt-3.5-turbo-0301") { OwnedBy = "openai" };
         public static Model ChatGPTTurbo1106 => new Model("gpt-3.5-turbo-1106") { OwnedBy = "openai" };
 		public static Model ChatGPTTurbo030116K => new Model("gpt-3.5-turbo-16k") { OwnedBy = "openai" };
+        public static Model ChatGPT35Turbo0125 => new Model("gpt-3.5-turbo-0125") { OwnedBy = "openai" };
 
         /// <summary>
         /// More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Will be updated with the latest model iteration.  Currently in limited beta so your OpenAI account needs to be whitelisted to use this.
@@ -152,7 +153,8 @@ namespace OpenAI_API.Models
         /// <summary>
         /// our most advanced model. It offers a 128K context window and knowledge of world events up to April 2023. 
         /// </summary>
-        public static Model GPT4_Turbo_Preview => new Model("gpt-4-1106-preview") { OwnedBy = "openai" };
+        public static Model GPT4_Turbo_Preview => new Model("gpt-4-0125-preview") { OwnedBy = "openai" };
+        public static Model GPT4_1106_preview => new Model("gpt-4-1106-preview") { OwnedBy = "openai" };
 
         /// <summary>
         /// Same capabilities as the base gpt-4 mode but with 4x the context length. Will be updated with the latest model iteration.  Currently in limited beta so your OpenAI account needs to be whitelisted to use this.
