@@ -161,11 +161,13 @@ namespace OpenAI_API.Models
         /// </summary>
         public static Model GPT4_32k_Context => new Model("gpt-4-32k") { OwnedBy = "openai" };
 
-		/// <summary>
-		/// Stable text moderation model that may provide lower accuracy compared to TextModerationLatest.
-		/// OpenAI states they will provide advanced notice before updating this model.
-		/// </summary>
-		public static Model TextModerationStable => new Model("text-moderation-stable") { OwnedBy = "openai" };
+        public static Model GPT_4o => new Model("gpt-4o") { OwnedBy = "openai" };
+
+        /// <summary>
+        /// Stable text moderation model that may provide lower accuracy compared to TextModerationLatest.
+        /// OpenAI states they will provide advanced notice before updating this model.
+        /// </summary>
+        public static Model TextModerationStable => new Model("text-moderation-stable") { OwnedBy = "openai" };
 
 		/// <summary>
 		/// The latest text moderation model. This model will be automatically upgraded over time.
