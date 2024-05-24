@@ -146,6 +146,8 @@ namespace OpenAI_API.Models
 		public static Model ChatGPTTurbo030116K => new Model("gpt-3.5-turbo-16k") { OwnedBy = "openai" };
         public static Model ChatGPT35Turbo0125 => new Model("gpt-3.5-turbo-0125") { OwnedBy = "openai" };
 
+        public static Model ChatGPT35Latest => ChatGPT35Turbo0125;
+
         /// <summary>
         /// More capable than any GPT-3.5 model, able to do more complex tasks, and optimized for chat. Will be updated with the latest model iteration.  Currently in limited beta so your OpenAI account needs to be whitelisted to use this.
         /// </summary>
@@ -162,6 +164,7 @@ namespace OpenAI_API.Models
         public static Model GPT4_32k_Context => new Model("gpt-4-32k") { OwnedBy = "openai" };
 
         public static Model GPT_4o => new Model("gpt-4o") { OwnedBy = "openai" };
+        public static Model ChatGPT4Latest => GPT_4o;
 
         /// <summary>
         /// Stable text moderation model that may provide lower accuracy compared to TextModerationLatest.
