@@ -165,6 +165,8 @@ namespace OpenAI_API.Models
 
         public static Model GPT_4o => new Model("gpt-4o") { OwnedBy = "openai" };
         public static Model ChatGPT4Latest => GPT_4o;
+        public static Model ChatGPT4MiniLatest => GPT_4o_mini;
+        public static Model GPT_4o_mini => new Model("gpt-4o-mini") { OwnedBy = "openai" };
 
         /// <summary>
         /// Stable text moderation model that may provide lower accuracy compared to TextModerationLatest.
