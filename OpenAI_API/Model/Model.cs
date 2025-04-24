@@ -164,12 +164,16 @@ namespace OpenAI_API.Models
         public static Model GPT4_32k_Context => new Model("gpt-4-32k") { OwnedBy = "openai" };
 
         public static Model GPT_4o => new Model("gpt-4o") { OwnedBy = "openai" };
+        public static Model Gpt_41_2025_04_14 => new Model("gpt-4.1-2025-04-14") { OwnedBy = "openai" };
+        public static Model Gpt_4o_2024_11_20 => new Model("gpt-4o-2024-11-20") { OwnedBy = "openai" };
         public static Model Gpt_4o_2024_08_06 => new Model("gpt-4o-2024-08-06") { OwnedBy = "openai" };
         public static Model Gpt_4o_2024_05_13 => new Model("gpt-4o-2024-05-13") { OwnedBy = "openai" };
 
-        public static Model ChatGPT4Latest => Gpt_4o_2024_08_06;
+        public static Model ChatGPT4Latest => Gpt_41_2025_04_14;
+
         public static Model ChatGPT4MiniLatest => GPT_4o_mini;
         public static Model GPT_4o_mini => new Model("gpt-4o-mini") { OwnedBy = "openai" };
+        public static Model GPT_41_mini => new Model("gpt-4.1-mini") { OwnedBy = "openai" };
 
         /// <summary>
         /// Stable text moderation model that may provide lower accuracy compared to TextModerationLatest.
